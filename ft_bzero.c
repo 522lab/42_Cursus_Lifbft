@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/21 13:33:08 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/21 17:24:17 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/02/21 19:03:45 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/02/21 19:10:48 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// checks alphabet or number.
+// writes zero to (n) bytes
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	ft_memset(s, 0, n);
 }

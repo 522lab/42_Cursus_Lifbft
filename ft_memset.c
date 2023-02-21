@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/21 13:33:08 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/21 17:24:17 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/02/21 17:10:31 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/02/21 19:08:08 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// checks alphabet or number.
+// writes (len) of char (c) to block (b)
 
-#include "libft.h"
+#include <stdlib.h>
 
-int	ft_isalnum(int c)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	unsigned char	*p;
+
+	p = b;
+	while (len--)
+		*p++ = (unsigned char)c;
+	return (b);
 }

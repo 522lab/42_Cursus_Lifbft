@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/21 13:33:08 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/21 17:24:17 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/02/21 13:56:38 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/02/21 17:24:22 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// checks alphabet or number.
+// checks ASCII. (decimal: 0-127)
 
-#include "libft.h"
-
-int	ft_isalnum(int c)
+int	ft_isascii(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

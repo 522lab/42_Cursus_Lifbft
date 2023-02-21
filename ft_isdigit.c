@@ -6,9 +6,11 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 13:12:15 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/21 13:44:36 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/02/21 17:24:24 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// checks digit.
 
 int	ft_isdigit(int c)
 {

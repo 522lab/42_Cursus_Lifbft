@@ -6,13 +6,15 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 12:22:33 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/21 13:40:52 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/02/21 17:24:20 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// checks alphabet.
+
 int	ft_isalpha(int c)
 {
-	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }

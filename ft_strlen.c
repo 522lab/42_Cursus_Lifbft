@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/21 13:33:08 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/21 17:24:17 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/02/21 15:59:40 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/02/21 17:34:26 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// checks alphabet or number.
+// count characters.
 
-#include "libft.h"
+#include <stdlib.h>
 
-int	ft_isalnum(int c)
+size_t	ft_strlen(const char *s)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	size_t	i;
+
+	i = 0;
+	while (*s++)
+		i++;
+	return (i);
 }
