@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/21 12:22:33 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/21 13:18:52 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/02/21 13:12:15 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/02/21 13:20:11 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+int	ft_isdigit(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
@@ -20,8 +20,8 @@ int	ft_isalpha(int c)
 #include <stdio.h>
 int	main()
 {
-	printf("%d\n",ft_isalpha('1'));
-	printf("%d\n",ft_isalpha(' '));
-	printf("%d\n",ft_isalpha('a'));
+	printf("%d\n",ft_isdigit('1'));
+	printf("%d\n",ft_isdigit(' '));
+	printf("%d\n",ft_isdigit('a'));
 }
  */
