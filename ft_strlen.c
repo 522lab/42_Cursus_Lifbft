@@ -10,16 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// count characters.
+// count characters in string, null excluded.
 
 #include <stdlib.h>
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlen(const char *string)
 {
-	size_t	i;
+	size_t	index;
 
-	i = 0;
-	while (*s++)
-		i++;
-	return (i);
+	index = 0;
+	while (*string++)
+		index++;
+	return (index);
 }
