@@ -1,7 +1,7 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
@@ -12,24 +12,30 @@
 
 FLAGS = -Wall -Wextra -Werror
 NAME = libft.a
-SRC = $(wildcard *.c)
+SRC = 	ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isdigit.c\
+		ft_isprint.c ft_memcpy.c ft_memmove.c ft_memset.c\
+		ft_strlcat.c ft_strlcpy.c ft_strlen.c
 
-OBJS = $(SRC:.c=.o)
+OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
 %o: %c
 	gcc $(FLAGS) -c $< -o $@
 
-$(NAME): $(OBJS)
-	ar -rcs $(NAME) $(OBJS)
+$(NAME): $(OBJ)
+	ar -rcs $(NAME) $(OBJ)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+so:
+	$(CC) -nostartfiles -fPIC $(FLAGS) $(SRC)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)
 
 .PHONY: clean fclean all re
