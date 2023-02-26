@@ -6,30 +6,40 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 17:06:00 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/22 22:15:08 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/02/27 01:14:59 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// copy src to dst, overlap protected.
+// copy src to dst in non-destructive manner.
 
 #include "libft.h"
 #include <stdlib.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*d;
-	unsigned char	*s;
+	size_t	i;
 
-	d = (unsigned char *)dst;
-	s = (unsigned char *)src;
-	if (d == s || len == 0)
-		return (d);
-	if (d > s && s + len > d)
-	{
-		while (len--)
-			d[len] = s[len];
-	}
+	i = len;
+	if ((char *)dst == (char *)src || len == 0)
+		return (dst);
+	if ((char *)dst > (char *)src && (char *)src + len > (char *)dst)
+		while (i--)
+			*(char *)(dst + i) = *(char *)(src + i);
 	else
-		ft_memcpy(d, s, len);
-	return (d);
+		ft_memcpy(dst, src, len);
+	return (dst);
 }
+/* 
+*************************************************************************
+DESCRIPTION
+
+copy src to dst in non-destructive manner.
+
+RETURN
+
+pointer to first element.
+*************************************************************************
+HOW IT PREVENT OVERLAP ?
+
+https://www.equestionanswers.com/c/memcpy-vs-memmove.php
+ */
