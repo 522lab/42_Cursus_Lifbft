@@ -6,22 +6,21 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 19:03:45 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/27 01:12:41 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/02/27 17:55:17 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
+#include <stddef.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char		*dp;
 	const char	*sp;
 
-	if (!dst && !src)
-		return (dst);
 	dp = dst;
 	sp = src;
+	if (!dst && !src)
+		return (dst);
 	while (n--)
 		*dp++ = *sp++;
 	return (dst);
@@ -85,7 +84,7 @@ for example,
 	int src[4] = {1, 257, 65793, 16843009};
 
 let's say we want to copy the first two elements, we can call like this
-	memcpy(dst, src, sizeof(src[0]) * 2); => 5, 6, 3, 4
+	memcpy(dst, src, sizeof(src[0]) * 2); => 1, 257, 3, 4
 
 or we want to copy all elements, we can call like this
 	memcpy(dst, src, sizeof(src));

@@ -6,25 +6,23 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 17:06:00 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/27 01:14:59 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/02/27 17:55:27 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// copy src to dst in non-destructive manner.
-
+#include <stddef.h>
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t	i;
+	char		*dp;
+	const char	*sp;
 
-	i = len;
-	if ((char *)dst == (char *)src || len == 0)
-		return (dst);
-	if ((char *)dst > (char *)src && (char *)src + len > (char *)dst)
-		while (i--)
-			*(char *)(dst + i) = *(char *)(src + i);
+	dp = dst;
+	sp = src;
+	if (dp > sp && sp + len > dp)
+		while (len--)
+			*(dp + len) = *(sp + len);
 	else
 		ft_memcpy(dst, src, len);
 	return (dst);
@@ -41,5 +39,6 @@ pointer to first element.
 *************************************************************************
 HOW IT PREVENT OVERLAP ?
 
+it copy backward.
 https://www.equestionanswers.com/c/memcpy-vs-memmove.php
  */
