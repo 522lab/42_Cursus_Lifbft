@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 19:03:45 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/27 20:46:30 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/02/27 21:21:50 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,6 @@ VOID POINTER
 	char		*dp;
 	const char	*sp;
 
-the source pointer is constant.
-to prevent unintended modifications to the original data.
 *************************************************************************
 WHY CHAR POINTER ?
 I think the reason to type-cast to char* is it easy to copy byte by byte.
