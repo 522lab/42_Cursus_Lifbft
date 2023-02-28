@@ -6,13 +6,9 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 20:51:58 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/22 23:10:06 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 04:18:54 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// if dstsize valid,
-// copy src to dst upto src or dstsize - 1
-// always return src length
 
 #include "libft.h"
 #include <stdlib.h>
@@ -29,3 +25,15 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
+/*
+*************************************************************************
+DESCRIPTION
+dstsize must > 0
+copy src to dst upto src or dstsize - 1 (spare one for NUL)
+NUL-terminated
+*************************************************************************
+RETURN
+src length
+*************************************************************************
+https://linux.die.net/man/3/strlcpy
+ */
