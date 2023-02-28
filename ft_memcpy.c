@@ -6,16 +6,16 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 19:03:45 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/27 21:21:50 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 01:22:58 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-void *ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char *dp;
-	const char *sp;
+	char		*dp;
+	const char	*sp;
 
 	dp = dst;
 	sp = src;
