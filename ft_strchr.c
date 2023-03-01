@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 14:15:29 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 15:37:24 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 17:57:30 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,13 @@ char	*ft_strchr(const char *s, int c)
 /*
 *************************************************************************
 DESCRIPTION
-locates character in string (including NULL)
+locates first match character in string (including NULL)
 *************************************************************************
 RETURN
 located pointer // NULL (character not found)
+*************************************************************************
+MANUAL
+https://clc-wiki.net/wiki/strchr
 *************************************************************************
 2ND VERSION
 
