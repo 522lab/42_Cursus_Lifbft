@@ -6,11 +6,9 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:59:40 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 15:47:59 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 18:00:09 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//
 
 #include <stddef.h>
 
@@ -32,5 +30,5 @@ RETURN
 src length
 *************************************************************************
 MANUAL
-https://clc-wiki.net/wiki/C_standard_library:string.h:strlen
+https://clc-wiki.net/wiki/strlen
  */
