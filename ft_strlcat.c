@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 22:59:49 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/23 01:14:42 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 11:51:53 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // return total length of the concatenated strings
 
 #include "libft.h"
-#include <stdlib.h>
+#include <stddef.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
