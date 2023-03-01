@@ -1,36 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/21 15:59:40 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 15:47:59 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/01 14:00:54 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/01 14:08:40 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
-
-#include <stddef.h>
-
-size_t	ft_strlen(const char *s)
+int	ft_tolower(int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (*s++)
-		i++;
-	return (i);
+	if (c >= 'A' && c <= 'Z')
+		return (c - 'A' + 'a');
+	return (c);
 }
 /*
 *************************************************************************
 DESCRIPTION
-count characters in string (excluding NULL)
+if upper-case, convert to lower-case
 *************************************************************************
 RETURN
-src length
-*************************************************************************
-MANUAL
-https://clc-wiki.net/wiki/C_standard_library:string.h:strlen
+converted or original ASCII value.
  */

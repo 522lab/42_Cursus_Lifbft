@@ -6,14 +6,14 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 12:42:44 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 12:55:08 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 14:07:51 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		return (c + 'A' - 'a');
+		return (c - 'a' + 'A');
 	return (c);
 }
 /*
