@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 22:52:29 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 23:47:18 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/02 01:38:11 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n--)
 		if (*(unsigned char *)++s == (unsigned char)c)
 			return ((unsigned char *)s);
-	return (0);
+	return (NULL);
 }
 /*
 *************************************************************************
