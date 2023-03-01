@@ -6,11 +6,9 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:47:23 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/21 17:24:27 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 11:50:25 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// checks printable. (decimal: 32-126)
 
 int	ft_isprint(int c)
 {
@@ -18,3 +16,11 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+/*
+*************************************************************************
+DESCRIPTION
+checks printable. (decimal: 32-126)
+*************************************************************************
+RETURN
+TRUE (1) / FALSE (0)
+ */
