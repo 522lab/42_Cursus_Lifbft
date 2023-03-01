@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 14:00:54 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 14:08:40 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 20:26:02 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ DESCRIPTION
 if upper-case, convert to lower-case
 *************************************************************************
 RETURN
-converted or original ASCII value.
+converted ASCII || original ASCII
  */

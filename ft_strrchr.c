@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 14:15:29 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 20:21:17 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 20:25:37 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ DESCRIPTION
 locates last match character in string (including NULL)
 *************************************************************************
 RETURN
-located pointer // NULL (character not found)
+located pointer || NULL (character not found)
 *************************************************************************
 MANUAL
 https://clc-wiki.net/wiki/strrchr
