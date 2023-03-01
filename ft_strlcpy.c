@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 20:51:58 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 11:51:58 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/02 03:17:59 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,19 @@ NUL-terminated
 RETURN
 src length
 *************************************************************************
+MANUAL
 https://linux.die.net/man/3/strlcpy
+*************************************************************************
+VERSION 1.0
+{
+	if (!dstsize)
+		return ft_strlen(src);
+	if (*src && dstsize > 1)
+	{
+		*dst = *src;
+		return 1 + ft_strlcpy(dst + 1, src + 1, dstsize - 1);
+	}
+	*dst = '\0';
+	return ft_strlen(src);
+}
  */
