@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 18:07:22 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/02 00:51:45 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/02 03:52:00 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 /*
 *************************************************************************
 DESCRIPTION
-compares up to NUL or n characters
+compares up to NUL or n characters, (safer version of memcmp)
 *************************************************************************
 RETURN
 (-) if s1 < s2
