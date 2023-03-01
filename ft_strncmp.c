@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 18:07:22 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 20:30:23 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 23:08:10 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,14 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while((*s1 || *s2) && n--)
+	while ((*s1 || *s2) && n--)
 	{
-		if(*s1 != *s2)
+		if (*s1 != *s2)
 			return ((unsigned char)*s1 - (unsigned char)*s2);
 		s1++;
 		s2++;
 	}
 	return (0);
-
 }
 /*
 *************************************************************************
@@ -57,4 +56,3 @@ if not check NUL, below result would be -1 which is incorrect.
 MANUAL
 https://clc-wiki.net/wiki/strncmp
  */
-
