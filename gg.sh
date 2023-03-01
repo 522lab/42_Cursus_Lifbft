@@ -1,6 +1,6 @@
 #!/bin/sh
 cd tester/war
-bash grademe.sh
+bash grademe.sh -op1
 cd ../..
 make all
 cd tester/tri
