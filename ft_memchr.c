@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 22:52:29 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/02 01:38:11 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/02 02:39:14 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	s -= 1;
 	while (n--)
-		if (*(unsigned char *)++s == (unsigned char)c)
-			return ((unsigned char *)s);
+		if (*(unsigned char *)s++ == (unsigned char)c)
+			return ((unsigned char *)s - 1);
 	return (NULL);
 }
 /*
@@ -69,5 +68,14 @@ VERSION 3.0
 		if (*++p == (unsigned char)c)
 			return (p);
 	return (0);
+}
+*************************************************************************
+VERSION 4.0
+{
+	s -= 1;
+	while (n--)
+		if (*(unsigned char *)++s == (unsigned char)c)
+			return ((unsigned char *)s);
+	return (NULL);
 }
  */
