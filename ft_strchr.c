@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 14:15:29 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 20:01:30 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 20:22:36 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ DESCRIPTION
 locates first match character in string (including NUL)
 *************************************************************************
 RETURN
-located pointer // NULL (character not found)
+located pointer
+NULL (character not found)
 *************************************************************************
 MANUAL
 https://clc-wiki.net/wiki/strchr

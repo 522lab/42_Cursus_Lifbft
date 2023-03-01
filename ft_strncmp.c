@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 18:07:22 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 20:00:22 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/01 20:23:20 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ if not check NUL, below result would be -1 which is incorrect.
 		i++;
 	}
 	return (0);
+*************************************************************************
+MANUAL
 	https://clc-wiki.net/wiki/strncmp
  */
 
