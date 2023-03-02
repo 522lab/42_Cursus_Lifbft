@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 19:03:45 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 01:22:58 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/02 17:24:27 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ pointer to first element.
 *************************************************************************
 NULL POINTER INTERPRETATION
 ***************
-https://www.shorturl.at/brIST
+https://stackoverflow.com/questions/5243012
 
 #include <string.h>
 #include <stdio.h>
@@ -100,11 +100,10 @@ or we want to copy all elements, we can call like this
 
 	memcpy(dst, src, sizeof(src));
 
-visualize at https://rb.gy/7s2jvx
 *************************************************************************
 MEMCPY VS MEMMOVE
 https://www.equestionanswers.com/c/memcpy-vs-memmove.php
-https://stackoverflow.com/questions/4415910/memcpy-vs-memmove
+https://stackoverflow.com/questions/4415910
 *************************************************************************
 FURTHER STUDY
 ***************

@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 17:10:31 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/01 11:51:49 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/02 17:23:14 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ write single character to a char array.
 or write 0 or -1 to an int array.
 *************************************************************************
 WHY TAKE INTEGER AS INPUT (INT C)?
-https://www.shorturl.at/qR139
+https://stackoverflow.com/questions/5919735
 *************************************************************************
 WHY ONLY 0 AND -1 ALLOWED?
 because 0 and -1 are the only two integers that have identical 4 bytes
