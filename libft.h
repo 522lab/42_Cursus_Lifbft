@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:26:28 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/02 21:50:33 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/03 01:13:38 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,5 @@ char	*ft_strnstr(const char *s, const char *find, size_t slen);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 #endif
