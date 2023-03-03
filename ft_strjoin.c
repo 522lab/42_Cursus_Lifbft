@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 17:32:48 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/03 18:04:29 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/03 21:45:09 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,11 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	ft_memcpy(new + ft_strlen(s1), s2, ft_strlen(s2) + 1);
 	return (new);
 }
+/*
+*************************************************************************
+DESCRIPTION
+allocated new string from s1 + s2
+*************************************************************************
+RETURN
+NULL (no src, allocate fail) || pointer to new (success)
+ */
