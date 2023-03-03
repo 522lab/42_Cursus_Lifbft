@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/01 14:15:29 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/02 02:04:47 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/03 18:37:28 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/03 18:37:29 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	len = ft_strlen(s) + 1;
 	while (len--)
 		if (s[len] == (char)c)
-			return ((char *)&s[len]);
+			return ((char *)s + len);
 	return (NULL);
 }
 /*
