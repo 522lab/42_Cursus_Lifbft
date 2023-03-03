@@ -2,3 +2,4 @@ tester
 a.out
 libft.so
 .vscode
+.DS_Store
