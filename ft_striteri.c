@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 19:59:54 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/05 21:08:12 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 21:14:59 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ DESCRIPTION
 manipulate characters using non-return function
 *************************************************************************
 RETURN
-void
+nothing
 *************************************************************************
 USAGE
 void	upper(unsigned int i, char *c)
