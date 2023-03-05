@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 17:03:06 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/05 18:05:31 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 21:10:29 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,17 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	map[i] = '\0';
 	return (map);
 }
-/* 
+/*
 *************************************************************************
 DESCRIPTION
 manipulate characters using callback function
 *************************************************************************
 RETURN
 manipulated characters
+*************************************************************************
+USAGE
 
-char	function(unsigned int index, char c)
+char	rot_13(unsigned int i, char c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (((c - 'a' + 13) % 26) + 'a');
@@ -49,6 +51,11 @@ char	function(unsigned int index, char c)
 		return (((c - 'A' + 13) % 26) + 'A');
 	return (c);
 }
-
-ft_strmapi("Hello, world!", function);
+#include <stdio.h>
+int	main(void)
+{
+	char s[] = "abcd";
+	ft_strmapi(s, rot_13);
+	puts(s);
+}
  */
