@@ -1,10 +1,10 @@
 #!/bin/sh
 cd tester/war
-bash grademe.sh -op1
+bash grademe.sh -op2
 cd ../..
 make all
 cd tester/tri
-make "$1"
+make m
 cd ../unit
 make f
 cd ../..
