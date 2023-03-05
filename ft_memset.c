@@ -6,11 +6,11 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 17:10:31 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/02 17:23:14 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 17:43:42 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

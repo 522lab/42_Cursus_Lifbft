@@ -6,11 +6,11 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 22:52:29 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/02 02:39:14 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 17:44:17 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

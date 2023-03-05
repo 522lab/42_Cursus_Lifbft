@@ -6,11 +6,10 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 00:59:37 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/04 17:41:35 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 17:39:41 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

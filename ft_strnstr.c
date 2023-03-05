@@ -6,11 +6,10 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 04:19:31 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/02 05:53:16 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 17:41:22 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *src, const char *sub, size_t len_src)

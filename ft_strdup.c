@@ -6,11 +6,10 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 21:46:23 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/02 22:06:35 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 17:43:30 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s)

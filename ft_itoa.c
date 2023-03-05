@@ -6,12 +6,10 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/04 13:06:45 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/05 14:14:00 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 17:44:25 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <limits.h>
 #include "libft.h"
 
 static int	len_nbr(int nbr)

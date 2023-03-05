@@ -6,12 +6,10 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/02 19:25:00 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/02 20:46:36 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 17:45:48 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdint.h>
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)

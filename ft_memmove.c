@@ -6,11 +6,10 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 17:06:00 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/02/27 20:45:31 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 17:43:52 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)

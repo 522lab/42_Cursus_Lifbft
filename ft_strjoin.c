@@ -6,11 +6,10 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/03 17:32:48 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/03 21:45:09 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 17:43:13 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(const char *s1, const char *s2)
