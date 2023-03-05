@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/05 17:03:06 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/05 17:39:08 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/05 18:05:31 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,19 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 /* 
 *************************************************************************
 DESCRIPTION
-compares up to NUL or n characters, (safer version of memcmp)
+manipulate characters using callback function
 *************************************************************************
 RETURN
-(-) if s1 < s2
-(+) if s1 > s2
-(0) if s1 = s2
+manipulated characters
+
+char	function(unsigned int index, char c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (((c - 'a' + 13) % 26) + 'a');
+	else if (c >= 'A' && c <= 'Z')
+		return (((c - 'A' + 13) % 26) + 'A');
+	return (c);
+}
+
+ft_strmapi("Hello, world!", function);
  */
