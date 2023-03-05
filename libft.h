@@ -6,7 +6,7 @@
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/21 15:26:28 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/06 00:11:49 by nsuphasa         ###   ########.fr       */
+/*   Updated: 2023/03/06 00:24:24 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 #endif
