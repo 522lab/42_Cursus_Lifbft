@@ -1,61 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/05 17:03:06 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/05 21:10:29 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/05 19:59:54 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/06 00:03:25 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int	len;
 	unsigned int	i;
-	char			*map;
 
 	if (!s)
-		return (NULL);
-	len = ft_strlen(s);
-	map = malloc(len + 1);
-	if (!map)
-		return (NULL);
-	i = 0;
-	while (s[i])
-	{
-		map[i] = f(i, s[i]);
-		i++;
-	}
-	map[i] = '\0';
-	return (map);
+		return ;
+	i = -1;
+	while (s[++i])
+		f(i, s + i);
 }
 /*
 *************************************************************************
 DESCRIPTION
-manipulate characters using callback function
+manipulate characters using non-return function
 *************************************************************************
 RETURN
-manipulated characters
+nothing
 *************************************************************************
 USAGE
-
-char	rot_13(unsigned int i, char c)
+void	upper(unsigned int i, char *c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (((c - 'a' + 13) % 26) + 'a');
-	else if (c >= 'A' && c <= 'Z')
-		return (((c - 'A' + 13) % 26) + 'A');
-	return (c);
+	if (*c >= 'a' && *c <= 'z')
+		*c = *c - 'a' + 'A';
+	i++;
 }
+
 #include <stdio.h>
 int	main(void)
 {
 	char s[] = "abcd";
-	ft_strmapi(s, rot_13);
+	ft_striteri(s, upper);
 	puts(s);
 }
  */
