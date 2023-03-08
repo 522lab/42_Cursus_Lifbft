@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/21 15:26:28 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/05 17:45:58 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/08 15:23:44 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/08 15:24:17 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ char	*ft_strnstr(const char *s, const char *find, size_t slen);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
+// Part 2
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_itoa(int n);
