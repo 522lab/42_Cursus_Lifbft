@@ -1,41 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 16:03:41 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/12 00:29:40 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/08 17:13:27 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/12 00:55:17 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	t_list	*new;
-
-	new = (t_list *)malloc(sizeof(t_list));
-	if (!new)
-		return (NULL);
-	new->content = content;
-	new->next = NULL;
-	return (new);
+	new->next = *lst;
+	*lst = new;
 }
 /*
 *************************************************************************
 DESCRIPTION
-creates a node with initialize content and a NULL next pointer.
+add new node at the beginning of the list
 *************************************************************************
 RETURN
-new node || NULL (allocate failed)
+none
 *************************************************************************
 EXPLANATION
-	new = (t_list *)malloc(sizeof(t_list)); // allocate new node
-	new->content = content; // put in content
-	new->next = NULL; // join NULL to new node
-*************************************************************************
-ARROW OPERATOR AND INDIRECTION OPERATOR
-	new->content is equivalent to (*new).content
- */
+	new->next = *lst; // join list to node
+	*lst = new; // make new node as head
+*/

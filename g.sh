@@ -2,10 +2,10 @@
 cd tester/war
 bash grademe.sh -ft_"$1"
 cd ../..
-make all
 cd tester/tri
 make "$1"
-cd ../unit
+cd ../..
+cd tester/unit
 make f
 cd ../..
 make fclean

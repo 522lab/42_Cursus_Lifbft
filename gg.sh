@@ -1,11 +1,11 @@
 #!/bin/sh
 cd tester/war
-bash grademe.sh -op2
+bash grademe.sh
 cd ../..
-make all
 cd tester/tri
 make m
-cd ../unit
+cd ../..
+cd tester/unit
 make f
 cd ../..
 make fclean

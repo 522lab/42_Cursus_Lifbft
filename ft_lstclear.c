@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 19:05:34 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/12 00:29:35 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/08 18:36:49 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/12 00:55:18 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if (!lst || !f)
+	t_list	*current;
+	t_list	*next;
+
+	if (!lst || !del)
 		return ;
-	while (lst)
+	current = *lst;
+	while (current)
 	{
-		f(lst->content);
-		lst = lst->next;
+		next = current->next;
+		del(current->content);
+		free(current);
+		current = next;
 	}
+	*lst = NULL;
 }
 /*
 *************************************************************************
 DESCRIPTION
-Iterates the list and applies the function
+deletes and frees the given node and it's succesors
 *************************************************************************
 RETURN
 none

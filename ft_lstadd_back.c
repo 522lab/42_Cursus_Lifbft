@@ -1,39 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 18:36:49 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/12 00:29:32 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/08 17:53:19 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/12 00:55:15 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*current;
-	t_list	*next;
 
-	if (!lst || !del)
-		return ;
-	current = *lst;
-	while (current)
+	if (!*lst)
 	{
-		next = current->next;
-		del(current->content);
-		free(current);
-		current = next;
+		*lst = new;
+		return ;
 	}
-	*lst = NULL;
+	current = *lst;
+	while (current->next)
+		current = current->next;
+	current->next = new;
 }
 /*
 *************************************************************************
 DESCRIPTION
-deletes and frees the given node and it's succesors
+add new node at the end of the list
 *************************************************************************
 RETURN
 none
+*************************************************************************
+EXPLANATION
+{
+	// If list is empty, point head to new node
+	if (!*lst)
+	{
+		*lst = new;
+		return ;
+	}
+
+	// Otherwise, find last node
+	current = *lst;
+	while (current->next)
+		current = current->next;
+
+	// join new node to last node
+	current->next = new;
+}
  */
