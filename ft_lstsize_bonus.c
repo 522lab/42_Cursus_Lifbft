@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 17:13:27 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/08 17:26:45 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/08 17:34:29 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/12 00:29:42 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+int	ft_lstsize(t_list *lst)
 {
-	new->next = *lst;
-	*lst = new;
+	int	node;
+
+	node = 0;
+	while (lst)
+	{
+		node++;
+		lst = lst->next;
+	}
+	return (node);
 }
-/* 
+/*
 *************************************************************************
 DESCRIPTION
-add new node at the beginning of the list
+count node in list
 *************************************************************************
 RETURN
-none
-*************************************************************************
-EXPLANATION
-	new->next = *lst; // join list to node
-	*lst = new; // make new node as head
-*/
+number of nodes in list
+ */

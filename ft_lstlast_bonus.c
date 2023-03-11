@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 17:34:29 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/08 17:39:05 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/08 17:43:06 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/12 00:29:37 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
-	int	node;
-
-	node = 0;
 	while (lst)
 	{
-		node++;
+		if (!lst->next)
+			return (lst);
 		lst = lst->next;
 	}
-	return (node);
+	return (lst);
 }
-/* 
+/*
 *************************************************************************
 DESCRIPTION
-count node in list
+find last node
 *************************************************************************
 RETURN
-number of nodes in list
+last node
  */

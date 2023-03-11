@@ -1,29 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/08 19:11:47 by nsuphasa          #+#    #+#             */
-/*   Updated: 2023/03/08 19:11:51 by nsuphasa         ###   ########.fr       */
+/*   Created: 2023/03/08 17:53:19 by nsuphasa          #+#    #+#             */
+/*   Updated: 2023/03/12 00:28:52 by nsuphasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if (!lst || !del)
+	t_list	*current;
+
+	if (!*lst)
+	{
+		*lst = new;
 		return ;
-	del(lst->content);
-	free(lst);
+	}
+	current = *lst;
+	while (current->next)
+		current = current->next;
+	current->next = new;
 }
-/* 
+/*
 *************************************************************************
 DESCRIPTION
-delete and free a node
+add new node at the end of the list
 *************************************************************************
 RETURN
 none
+*************************************************************************
+EXPLANATION
+{
+	// If list is empty, point head to new node
+	if (!*lst)
+	{
+		*lst = new;
+		return ;
+	}
+
+	// Otherwise, find last node
+	current = *lst;
+	while (current->next)
+		current = current->next;
+
+	// join new node to last node
+	current->next = new;
+}
  */
