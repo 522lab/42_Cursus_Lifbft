@@ -6,7 +6,7 @@
 #    By: nsuphasa <nsuphasa@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/28 17:57:12 by nsuphasa          #+#    #+#              #
-#    Updated: 2023/03/12 13:10:14 by nsuphasa         ###   ########.fr        #
+#    Updated: 2023/03/12 13:56:29 by nsuphasa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ SRC =	ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.
 	ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c\
 	ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
-SRC_BONUS =	ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c\
-		ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c\
+SRC_BONUS =	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c\
+		ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
 		ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 OBJS = $(SRC:.c=.o)
@@ -49,10 +49,10 @@ re: fclean all
 
 rebonus: fclean bonus
 
-so:
-	$(CC) -nostartfiles -fPIC $(FLAGS) $(SRC)
-	gcc -nostartfiles -shared -o libft.so $(OBJS)
-	# $(CC) -nostartfiles -fPIC $(FLAGS) $(SRC_BONUS)
-	# gcc -nostartfiles -shared -o libft.so $(OBJS_BONUS)
+# so:
+# 	$(CC) -nostartfiles -fPIC $(FLAGS) $(SRC_BONUS)
+# 	gcc -nostartfiles -shared -o libft.so $(OBJS_BONUS)
+# 	$(CC) -nostartfiles -fPIC $(FLAGS) $(SRC)
+# 	gcc -nostartfiles -shared -o libft.so $(OBJS)
 
 .PHONY: clean fclean all re bonus rebonus
